@@ -22,3 +22,15 @@ Content-Type: application/json
 {
     "prompt": "SOLID, design pattern"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+    "videoId": "674721ab-5e01-4d92-b1b5-2d851fc7dde9",
+    "template": "Gere um resumo em 1 parágrafo do texto informado: '''{transcription}'''",
+    "temperature": 0
+}
